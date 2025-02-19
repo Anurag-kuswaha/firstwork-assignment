@@ -29,10 +29,10 @@ export default function Input({ label, name, value, questionId, updateQuestion, 
                 required={required}
 
                 onChange={(e) => updateQuestion(questionId, name, e.target.value)}
-                className="peer w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-11/12"
+                className="peer w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-custom-secondary focus:border-custom-secondary w-11/12 bg-[#F7F9FA]"
             />
             {focussed && <label
-                className="absolute left-3 -top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 "
+                className="absolute left-3 -top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-custom-secondary "
             >
                 {label}
             </label>}

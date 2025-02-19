@@ -48,8 +48,8 @@ export default function Homepage() {
 
     return (
         <div className="p-6">
-            <button onClick={addQuestion} className="mb-4 px-4 py-2 bg-white border border-blue text-blue-500 font-bold rounded block">+ Add Question</button>
             <QuestionList questions={questions} updateQuestion={updateQuestion} removeQuestion={removeQuestion} />
+            <button onClick={addQuestion} className="mb-4 px-4 py-2 bg-custom-secondary border border-custom-secondary text-white font-bold rounded block">+ Add Question</button>
         </div>
     );
 }

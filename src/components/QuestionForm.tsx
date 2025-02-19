@@ -19,7 +19,7 @@ function QuestionForm({ question, updateQuestion }: QuestionItemProps) {
     ]
     return (
         <>
-            <div className="flex justify-between relative pb-6">
+            <div className="flex justify-between relative pb-6 ">
                 <Input label={"Question title *"} name={"title"} value={question.title} questionId={question.id} updateQuestion={updateQuestion} required={true}/>
 
                 <ChevronUp className=" cursor-pointer" onClick={(e) => updateQuestion(question.id, "isDropdownOpen", false)} />
