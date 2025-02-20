@@ -90,7 +90,7 @@ function QuestionForm({
                 : ""
             }
           />
-          <div className="flex items-center space-x-2 pl-2 mt-2 w-full md:w-4/12">
+          <div className="flex lg:contents items-center space-x-2 pl-2 mt-2 w-full md:w-4/12">
           <input
             type="number"
             placeholder="Min"

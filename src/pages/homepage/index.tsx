@@ -22,6 +22,7 @@ export default function Homepage() {
         isDropdownOpen: false,
       }));
       setQuestions(questionList);
+      if (questions.length ==0) setIsFormValid(true);
     }
   }, []);
 
@@ -60,8 +61,9 @@ export default function Homepage() {
   };
 
   const removeQuestion = async (id: string) => {
+    if (questions.length ==1) setIsFormValid(() => true)
     setQuestions((prev) => prev.filter((q) => q.id !== id));
-    await deleteQuestion(id, setLoading);
+    await deleteQuestion(id, setLoading); 
   };
   return (
     <div className="p-6">
