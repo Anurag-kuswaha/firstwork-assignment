@@ -44,7 +44,7 @@ function QuestionForm({
           onClick={(e) => setCurrentOpenForm(() => {})}
         />
       </div>
-      <div className="flex relative pb-6">
+      <div className="flex flex-col md:flex-row relative pb-6 w-full md:w-auto">
         <Select
           label={"Question type *"}
           name={"type"}
@@ -58,7 +58,7 @@ function QuestionForm({
               : ""
           }
         />
-        <div className="flex items-center space-x-2 pl-2 mt-2 w-2/12">
+        <div className="flex items-center space-x-2 pl-2 mt-2 w-full md:w-4/12">
           <Checkbox
             label={"Required"}
             name={"required"}
@@ -66,9 +66,7 @@ function QuestionForm({
             questionId={question.id}
             updateQuestion={updateQuestion}
           />
-        </div>
-        <div className="flex items-center space-x-2 pl-2 mt-2 w-2/12">
-          <Checkbox
+           <Checkbox
             label={"Hidden"}
             name={"hidden"}
             value={question.hidden}
@@ -78,7 +76,7 @@ function QuestionForm({
         </div>
       </div>
       {question.type === "number" && (
-        <div className="flex gap-2 relative pb-6">
+        <div className="flex flex-col md:flex-row gap-2 relative pb-6">
           <Select
             label={"Number Type *"}
             name={"numberType"}
@@ -92,6 +90,7 @@ function QuestionForm({
                 : ""
             }
           />
+          <div className="flex items-center space-x-2 pl-2 mt-2 w-full md:w-4/12">
           <input
             type="number"
             placeholder="Min"
@@ -99,7 +98,7 @@ function QuestionForm({
             onChange={(e) =>
               updateQuestion(question.id, "min", Number(e.target.value))
             }
-            className="p-2 border rounded"
+            className="p-2 border rounded w-full md:w-auto"
           />
           <input
             type="number"
@@ -108,8 +107,9 @@ function QuestionForm({
             onChange={(e) =>
               updateQuestion(question.id, "max", Number(e.target.value))
             }
-            className="p-2 border rounded"
+            className="p-2 border rounded w-full md:w-auto"
           />
+          </div>
         </div>
       )}
       {question.type === "text" && (

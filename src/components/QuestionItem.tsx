@@ -14,7 +14,7 @@ export default function QuestionItem({
     <div className="mb-4 p-4 md:p-8 border rounded-xl shadow-sm bg-[#F8F8FA] text-[#1D5E6D] font-[500]">
       {question && !isFormOpen && (
         <div className="flex justify-between">
-          <div className="text-custom-primary text-xl text-left font-bold flex items-end">
+          <div className="text-custom-primary text-xl text-left font-bold flex items-center md:items-end">
           <GripVertical />
             {question.title}
           </div>

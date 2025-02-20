@@ -41,7 +41,7 @@ export default function Input({
         } focus:border-custom-secondary w-11/12 bg-[#F7F9FA]`}
       />
       {
-        <label className="absolute left-3 -top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-custom-secondary ">
+        <label className="absolute left-3 -top-2 text-custom-secondary text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-custom-secondary ">
           {label}
         </label>
       }

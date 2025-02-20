@@ -17,7 +17,7 @@ export default function Select({
       <select
         onChange={(e) => updateQuestion(questionId, name, e.target.value)}
         value={value}
-        className={`p-2 border rounded w-8/12 ${
+        className={`p-2 border rounded w-12/12 md:w-4/12 ${
           error ? "border-[#ED2424]" : "border-custom-secondary"
         } bg-[#F7F9FA]`}
       >
@@ -27,7 +27,7 @@ export default function Select({
         {options &&
           options.map((val) => <option value={val.name}>{val.label}</option>)}
       </select>
-      <label className="absolute left-3 -top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-custom-secondary">
+      <label className="absolute left-3 -top-2 text-custom-secondary text-sm transition-all peer-placeholder-shown:-top-4 bg-white peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-custom-secondary">
         {label}
       </label>
     </>
