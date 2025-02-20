@@ -11,8 +11,8 @@ export default function Input({
       <input
         type="checkbox"
         placeholder="Question title"
-        value={value}
-        onChange={(e) => updateQuestion(questionId, name, e.target.value)}
+        checked={value?true: false}
+        onChange={(e) => updateQuestion(questionId, name, e.target.checked)}
         className="w-4 h-4"
       />
       <label>{label}</label>

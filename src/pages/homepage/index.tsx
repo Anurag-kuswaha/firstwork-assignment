@@ -49,6 +49,7 @@ export default function Homepage() {
   ) => {
     if (!currentOpenForm) return;
     const updatedForm = { ...currentOpenForm, [field]: value };
+    console.log('updatedForm ', updatedForm)
     setCurrentOpenForm(updatedForm);
 
     if (validateForm(updatedForm, setErrorFormValues, setIsFormValid)) {
