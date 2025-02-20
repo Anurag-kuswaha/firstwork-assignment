@@ -17,7 +17,7 @@ export default function Select({
       <select
         onChange={(e) => updateQuestion(questionId, name, e.target.value)}
         value={value}
-        className={`p-2 border rounded w-12/12 md:w-4/12 ${
+        className={`p-2 border rounded h-[56px] w-12/12 md:w-4/12 ${
           error ? "border-[#ED2424]" : "border-custom-secondary"
         } bg-[#F7F9FA]`}
       >

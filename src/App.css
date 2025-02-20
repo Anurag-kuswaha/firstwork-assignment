@@ -1,5 +1,6 @@
 body{
   background: linear-gradient(121.51deg, #E1F4F5 30.38%, #E1F4F5 53.04%, #D6EBF0 71.29%);
+  min-height:100vh
 }
 header{
   background: linear-gradient(121.51deg, #E1F4F5 30.38%, #E1F4F5 53.04%, #D6EBF0 71.29%);

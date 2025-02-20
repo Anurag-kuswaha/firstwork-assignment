@@ -123,7 +123,7 @@ function QuestionForm({
               updateQuestion={updateQuestion}
             />
           </div>
-          <div className="flex items-center space-x-2 pl-2 mt-2 w-4/12">
+          <div className="flex items-center space-x-2 pl-2 mt-2 w-5/12">
             <Checkbox
               label={"Is Paragraph"}
               name={"isParagraph"}
